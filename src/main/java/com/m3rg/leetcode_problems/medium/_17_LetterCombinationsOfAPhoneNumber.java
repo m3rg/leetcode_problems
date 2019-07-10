@@ -45,7 +45,9 @@ public class _17_LetterCombinationsOfAPhoneNumber {
     //Solution 1
     public List<String> letterCombinations(String digits) {
         LinkedList<String> l = new LinkedList<>();
-        
+        if(digits == null || digits.length() == 0) {
+            return l;
+        }
         l.add("");
         for(int i = 0; i<digits.length(); i++) {
             //int num = digits.charAt(i) - '0';
