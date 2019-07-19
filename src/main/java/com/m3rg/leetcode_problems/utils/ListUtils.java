@@ -1,5 +1,6 @@
 package com.m3rg.leetcode_problems.utils;
 
+import java.util.Arrays;
 import java.util.StringJoiner;
 
 public class ListUtils {
@@ -20,6 +21,12 @@ public class ListUtils {
             sj.add(String.valueOf(head.val));
             head = head.next;
         }
+        System.out.println(sj.toString());
+    }
+
+    public static void printArray(int[] nums) {
+        StringJoiner sj = new StringJoiner(", ");
+        Arrays.stream(nums).forEach(num -> sj.add(String.valueOf(num)));
         System.out.println(sj.toString());
     }
 }
