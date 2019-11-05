@@ -29,4 +29,12 @@ public class ListUtils {
         Arrays.stream(nums).forEach(num -> sj.add(String.valueOf(num)));
         System.out.println(sj.toString());
     }
+
+    public static <T> void printArray(T[][] nums) {
+        Arrays.stream(nums).forEach(row -> {
+            StringJoiner sj = new StringJoiner(", ");
+            Arrays.stream(row).forEach(num -> sj.add(String.valueOf(num)));
+            System.out.println(sj.toString());
+        });
+    }
 }
