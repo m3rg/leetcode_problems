@@ -47,6 +47,7 @@ public class _78_Subsets {
             List<List<Integer>> newSubsets = new ArrayList<>();
             for (List<Integer> curr : output) {
                 newSubsets.add(new ArrayList<Integer>(curr) {
+                    static final long serialVersionUID = 0L;
                     {
                         add(num);
                     }
